@@ -1,0 +1,41 @@
+The Zoho Round 3 Question tasked candidates with designing a Railway Ticket Booking Application with four main functionalities:
+
+Book
+Cancel
+Print booked tickets (details with summary)
+Print available tickets (details with summary)
+This article walks you through the problem, the conditions, and the solution code with inline comments to help you understand the implementation step by step.
+
+Table of Contents
+Understanding the Problem
+Solution Structure
+Code Walkthrough
+Passenger Class
+TicketSystem Class
+TicketBooking Class
+How It Works
+Understanding the Problem
+The application requires handling different ticket categories:
+
+Confirmed Tickets: 63 berths (Lower, Upper, Middle).
+RAC Tickets: 9 berths (18 passengers).
+Waiting List Tickets: 10 tickets max.
+Conditions for Booking:
+
+If the passenger is a senior citizen (>60 years) or a female, a lower berth should be allocated if available.
+If all berths are full, assign RAC.
+If RAC is full, assign Waiting List.
+If Waiting List exceeds 10 passengers, display “No tickets available”.
+Conditions for Cancellation:
+
+On canceling a confirmed ticket, an RAC ticket should move to confirmed, and a waiting-list ticket should move to RAC.
+Conditions for Printing Tickets:
+
+Booked Tickets: Display all confirmed passengers with details.
+Available Tickets: Show available berths, RAC slots, and Waiting List slots.
+Solution Structure
+The solution involves three classes:
+
+Passenger: Stores passenger details and ticket information.
+TicketSystem: Handles the core logic for booking, canceling, and printing tickets.
+TicketBooking: Provides the user interface to interact with the system
