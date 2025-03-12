@@ -1,5 +1,6 @@
 package irctc.app2;
 
+
 import java.util.Scanner;
 
 public class MainController {
@@ -20,6 +21,7 @@ public class MainController {
 		case 2:
 		case 3:{
 				System.out.println(TicketService.confirmTicket);
+				break;
 		}
 		}
 		}
