@@ -1,0 +1,15 @@
+# Ignore compiled class files
+*.class
+
+# Ignore all build and target directories
+/bin/
+/target/
+
+# Ignore Eclipse and STS specific metadata
+.classpath
+.project
+.settings/
+.metadata/
+
+# Ignore Maven dependencies
+/m2/

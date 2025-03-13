@@ -1,3 +1,4 @@
+
 package irctc.app1;
 
 public class Passenger {
@@ -18,3 +19,4 @@ public class Passenger {
 		number = -1;
 	}
 }
+
